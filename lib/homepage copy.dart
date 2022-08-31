@@ -60,446 +60,430 @@ class Homepage extends StatelessWidget {
                   ),
                   Padding(
                     padding: EdgeInsets.only(right: 15),
-                    child: Row(
-                      children: [
-                        Expanded(
-                          flex: 2,
-                          child: Padding(
-                            padding: EdgeInsets.only(right: 10),
-                            child: Container(
-                              height: 191,
-                              child: Row(children: [
-                                Expanded(
-                                  flex: 2,
-                                  child: Container(
-                                    color: Colors.white,
-                                    child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceEvenly,
-                                      children: [
-                                        Suhu(nama: 'max', angka: '30°C'),
-                                        Suhu(nama: 'avg', angka: '25°C'),
-                                        Suhu(
-                                          nama: 'min',
-                                          angka: '21°C',
-                                        )
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Expanded(
-                                  flex: 3,
-                                  child: Container(
-                                    padding: EdgeInsets.only(left: 22, top: 10),
-                                    decoration: const BoxDecoration(
-                                      color: Color.fromRGBO(239, 126, 49, 1),
-                                      borderRadius: BorderRadius.only(
-                                        topRight: Radius.circular(20),
-                                        bottomRight: Radius.circular(20),
-                                      ),
-                                    ),
-                                    child: Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Image.asset('image/cloudy.png'),
-                                        const Text(
-                                          'Sedang \nBerawan',
-                                          style: TextStyle(
-                                              fontSize: 14,
-                                              fontFamily: 'Signika',
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.white),
-                                        ),
-                                        Padding(
-                                          padding: const EdgeInsets.only(
-                                              top: 10, bottom: 5),
-                                          child: Container(
-                                            color: Colors.white,
-                                            width: double.infinity,
-                                            height: 1.5,
-                                          ),
-                                        ),
-                                        const Padding(
-                                          padding: EdgeInsets.only(top: 5),
-                                          child: Text(
-                                            '12:00',
-                                            style: TextStyle(
-                                                color: Colors.white,
-                                                fontSize: 14,
-                                                fontWeight: FontWeight.w400),
-                                          ),
-                                        ),
-                                        Text(
-                                          'Kemang, Jakarta Selatan',
-                                          style: TextStyle(
-                                              fontSize: 10,
-                                              color: Colors.white),
-                                        )
-                                      ],
-                                    ),
-                                  ),
-                                )
-                              ]),
-                            ),
-                          ),
-                        ),
-                        Expanded(
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(bottom: 8),
+                    child: Row(children: [
+                      Expanded(
+                        flex: 2,
+                        child: Padding(
+                          padding: EdgeInsets.only(right: 10),
+                          child: Container(
+                            height: 191,
+                            child: Row(children: [
+                              Expanded(
+                                flex: 2,
                                 child: Container(
-                                  width: double.infinity,
-                                  height: 132,
-                                  decoration: const BoxDecoration(
-                                    color: Color.fromRGBO(255, 255, 255, 0.3),
-                                    borderRadius: BorderRadius.all(
-                                      Radius.circular(10),
-                                    ),
-                                  ),
+                                  color: Colors.white,
                                   child: Column(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceEvenly,
                                     children: [
-                                      Padding(
-                                        padding: const EdgeInsets.only(top: 0),
-                                        child: Image.asset('image/Badge.png'),
-                                      ),
-                                      const Padding(
-                                        padding: EdgeInsets.only(top: 0),
-                                        child: Text(
-                                          'WISATAWAN\nTELADAN',
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.w700,
-                                            color: Colors.white,
-                                          ),
-                                        ),
-                                      ),
-                                      const Text(
-                                        '3500/10000',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Colors.green,
-                                          fontWeight: FontWeight.w700,
-                                          fontSize: 8,
-                                        ),
+                                      Suhu(nama: 'max', angka: '30°C'),
+                                      Suhu(nama: 'avg', angka: '25°C'),
+                                      Suhu(
+                                        nama: 'min',
+                                        angka: '21°C',
                                       )
                                     ],
                                   ),
                                 ),
                               ),
-                              Container(
-                                height: 51,
+                              Expanded(
+                                flex: 3,
+                                child: Container(
+                                  padding: EdgeInsets.only(left: 22, top: 10),
+                                  decoration: const BoxDecoration(
+                                    color: Color.fromRGBO(239, 126, 49, 1),
+                                    borderRadius: BorderRadius.only(
+                                      topRight: Radius.circular(20),
+                                      bottomRight: Radius.circular(20),
+                                    ),
+                                  ),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Image.asset('image/cloudy.png'),
+                                      const Text(
+                                        'Sedang \nBerawan',
+                                        style: TextStyle(
+                                            fontSize: 14,
+                                            fontFamily: 'Signika',
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.white),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(
+                                            top: 10, bottom: 5),
+                                        child: Container(
+                                          color: Colors.white,
+                                          width: double.infinity,
+                                          height: 1.5,
+                                        ),
+                                      ),
+                                      const Padding(
+                                        padding: EdgeInsets.only(top: 5),
+                                        child: Text(
+                                          '12:00',
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 14,
+                                              fontWeight: FontWeight.w400),
+                                        ),
+                                      ),
+                                      Text(
+                                        'Kemang, Jakarta Selatan',
+                                        style: TextStyle(
+                                            fontSize: 10, color: Colors.white),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ]),
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 8),
+                              child: Container(
+                                width: double.infinity,
+                                height: 132,
                                 decoration: const BoxDecoration(
                                   color: Color.fromRGBO(255, 255, 255, 0.3),
                                   borderRadius: BorderRadius.all(
                                     Radius.circular(10),
                                   ),
                                 ),
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: const [
+                                child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: [
                                     Padding(
-                                      padding: const EdgeInsets.only(right: 4),
+                                      padding: const EdgeInsets.only(top: 0),
+                                      child: Image.asset('image/Badge.png'),
+                                    ),
+                                    const Padding(
+                                      padding: EdgeInsets.only(top: 0),
                                       child: Text(
-                                        '12',
+                                        'WISATAWAN\nTELADAN',
+                                        textAlign: TextAlign.center,
                                         style: TextStyle(
-                                          fontSize: 32,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w700,
                                           color: Colors.white,
                                         ),
                                       ),
                                     ),
-                                    Text(
-                                      'Wisata\ntersimpan',
+                                    const Text(
+                                      '3500/10000',
+                                      textAlign: TextAlign.center,
                                       style: TextStyle(
-                                        fontSize: 10,
-                                        color: Colors.white,
+                                        color: Colors.green,
+                                        fontWeight: FontWeight.w700,
+                                        fontSize: 8,
                                       ),
                                     )
                                   ],
                                 ),
                               ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-
-                  //batas kedua
-                  Padding(
-                    padding: EdgeInsets.only(right: 15, top: 14),
-                    child: Row(
-                      children: [
-                        Expanded(
-                          flex: 2,
-                          child: Padding(
-                            padding: EdgeInsets.only(right: 10),
-                            child: Container(
-                              height: 164,
+                            ),
+                            Container(
+                              height: 51,
+                              decoration: const BoxDecoration(
+                                color: Color.fromRGBO(255, 255, 255, 0.3),
+                                borderRadius: BorderRadius.all(
+                                  Radius.circular(10),
+                                ),
+                              ),
                               child: Row(
-                                children: [
-                                  Expanded(
-                                    flex: 3,
-                                    child: Container(
-                                      padding:
-                                          EdgeInsets.only(left: 20, top: 16),
-                                      color: Color.fromRGBO(213, 51, 124, 1),
-                                      child: Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Image.asset(
-                                              'image/share-location 2.png'),
-                                          const Padding(
-                                            padding: EdgeInsets.only(left: 8.0),
-                                            child: Text(
-                                              'Wisata terdekat',
-                                              style: TextStyle(
-                                                  color: Colors.white,
-                                                  fontSize: 14),
-                                            ),
-                                          ),
-                                          const Padding(
-                                            padding: EdgeInsets.only(left: 8.0),
-                                            child: Text(
-                                              '13 objek wisata',
-                                              style: TextStyle(
-                                                  fontSize: 12,
-                                                  color: Colors.white),
-                                            ),
-                                          )
-                                        ],
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: const [
+                                  Padding(
+                                    padding: const EdgeInsets.only(right: 4),
+                                    child: Text(
+                                      '12',
+                                      style: TextStyle(
+                                        fontSize: 32,
+                                        color: Colors.white,
                                       ),
                                     ),
                                   ),
-                                  Expanded(
-                                    flex: 2,
-                                    child: Container(
-                                      padding: EdgeInsets.only(left: 0),
-                                      decoration: const BoxDecoration(
-                                        color: Color.fromRGBO(239, 126, 49, 1),
-                                        borderRadius: BorderRadius.only(
-                                          topRight: Radius.circular(20),
-                                          bottomRight: Radius.circular(20),
-                                        ),
-                                      ),
-                                      child: Column(
-                                        children: [
-                                          Expanded(
-                                            flex: 3,
-                                            child: Container(
-                                              width: double.infinity,
-                                              decoration: const BoxDecoration(
-                                                color: Colors.white,
-                                                borderRadius: BorderRadius.only(
-                                                  topRight: Radius.circular(20),
-                                                ),
-                                              ),
-                                              child: Padding(
-                                                padding: const EdgeInsets.only(
-                                                    left: 13, top: 30),
-                                                child: Column(
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.start,
-                                                  children: [
-                                                    Image.asset(
-                                                        'image/searchbutton.png'),
-                                                    const Padding(
-                                                      padding: EdgeInsets.only(
-                                                          top: 8),
-                                                      child: Text(
-                                                        'Cari Berdasarkan\nKata kunci',
-                                                        style: TextStyle(
-                                                            fontSize: 10,
-                                                            color:
-                                                                Color.fromRGBO(
-                                                                    207,
-                                                                    207,
-                                                                    207,
-                                                                    1)),
-                                                      ),
-                                                    )
-                                                  ],
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                          Expanded(
-                                            flex: 2,
-                                            child: Container(
-                                              width: double.infinity,
-                                              decoration: const BoxDecoration(
-                                                color: Color.fromRGBO(
-                                                    239, 126, 49, 1),
-                                                borderRadius: BorderRadius.only(
-                                                  bottomRight:
-                                                      Radius.circular(20),
-                                                ),
-                                              ),
-                                              child: const Center(
-                                                child: Text(
-                                                  'Lihat Semua',
-                                                  style: TextStyle(
-                                                      fontSize: 12,
-                                                      color: Colors.white),
-                                                ),
-                                              ),
-                                            ),
-                                          )
-                                        ],
-                                      ),
+                                  Text(
+                                    'Wisata\ntersimpan',
+                                    style: TextStyle(
+                                      fontSize: 10,
+                                      color: Colors.white,
                                     ),
                                   )
                                 ],
                               ),
                             ),
-                          ),
+                          ],
                         ),
-                        Expanded(
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(bottom: 0),
+                      ),
+                    ]),
+                  ),
+
+                  //batas kedua
+                  Padding(
+                    padding: EdgeInsets.only(right: 15, top: 14),
+                    child: Row(children: [
+                      Expanded(
+                        flex: 2,
+                        child: Padding(
+                          padding: EdgeInsets.only(right: 10),
+                          child: Container(
+                            height: 164,
+                            child: Row(children: [
+                              Expanded(
+                                flex: 3,
                                 child: Container(
-                                  width: double.infinity,
-                                  height: 164,
-                                  decoration: const BoxDecoration(
-                                    color: Color.fromRGBO(0, 133, 205, 1),
-                                    borderRadius: BorderRadius.all(
-                                      Radius.circular(10),
-                                    ),
-                                  ),
-                                  padding: EdgeInsets.only(top: 36),
+                                  padding: EdgeInsets.only(left: 20, top: 16),
+                                  color: Color.fromRGBO(213, 51, 124, 1),
                                   child: Column(
-                                    // mainAxisAlignment:
-                                    //     MainAxisAlignment.spaceEvenly,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: [
-                                      Container(
-                                        width: 93,
-                                        height: 22,
-                                        decoration: const BoxDecoration(
-                                          color:
-                                              Color.fromRGBO(76, 170, 220, 1),
-                                          borderRadius: BorderRadius.all(
-                                            Radius.circular(10),
-                                          ),
-                                        ),
-                                        child: Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceBetween,
-                                          children: [
-                                            Container(
-                                              width: 23,
-                                              decoration: const BoxDecoration(
-                                                color: Color.fromRGBO(
-                                                    130, 195, 231, 1),
-                                                borderRadius: BorderRadius.all(
-                                                  Radius.circular(10),
-                                                ),
-                                              ),
-                                              child: const Center(
-                                                child: Text(
-                                                  'USD',
-                                                  style: TextStyle(
-                                                    fontSize: 6,
-                                                    color: Colors.white,
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                            const Padding(
-                                              padding:
-                                                  EdgeInsets.only(right: 10.0),
-                                              child: Text(
-                                                '1',
-                                                style: TextStyle(
-                                                    color: Colors.white,
-                                                    fontSize: 10),
-                                              ),
-                                            )
-                                          ],
+                                      Image.asset('image/share-location 2.png'),
+                                      const Padding(
+                                        padding: EdgeInsets.only(left: 8.0),
+                                        child: Text(
+                                          'Wisata terdekat',
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 14),
                                         ),
                                       ),
-                                      Padding(
-                                        padding: const EdgeInsets.only(
-                                            top: 5, bottom: 5),
-                                        child: Image.asset('image/convert.png'),
-                                      ),
-                                      Container(
-                                        width: 93,
-                                        height: 22,
-                                        decoration: const BoxDecoration(
-                                          color:
-                                              Color.fromRGBO(76, 170, 220, 1),
-                                          borderRadius: BorderRadius.all(
-                                            Radius.circular(10),
-                                          ),
-                                        ),
-                                        child: Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceBetween,
-                                          children: [
-                                            Container(
-                                              width: 23,
-                                              decoration: const BoxDecoration(
-                                                color: Color.fromRGBO(
-                                                    130, 195, 231, 1),
-                                                borderRadius: BorderRadius.all(
-                                                  Radius.circular(10),
-                                                ),
-                                              ),
-                                              child: const Center(
-                                                child: Text(
-                                                  'Rp',
-                                                  style: TextStyle(
-                                                    fontSize: 6,
-                                                    color: Colors.white,
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                            const Padding(
-                                              padding:
-                                                  EdgeInsets.only(right: 10.0),
-                                              child: Text(
-                                                '14.500',
-                                                style: TextStyle(
-                                                    color: Colors.white,
-                                                    fontSize: 10),
-                                              ),
-                                            )
-                                          ],
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.only(
-                                            top: 15.0, right: 10),
-                                        child: Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: const [
-                                            Text(
-                                              'berdasarkan kurs tanggal 30\nAgustus 2022, 08:00 WIB',
-                                              style: TextStyle(
-                                                  fontSize: 6,
-                                                  color: Colors.white),
-                                            ),
-                                          ],
+                                      const Padding(
+                                        padding: EdgeInsets.only(left: 8.0),
+                                        child: Text(
+                                          '13 objek wisata',
+                                          style: TextStyle(
+                                              fontSize: 12,
+                                              color: Colors.white),
                                         ),
                                       )
                                     ],
                                   ),
                                 ),
                               ),
-                            ],
+                              Expanded(
+                                flex: 2,
+                                child: Container(
+                                  padding: EdgeInsets.only(left: 0),
+                                  decoration: const BoxDecoration(
+                                    color: Color.fromRGBO(239, 126, 49, 1),
+                                    borderRadius: BorderRadius.only(
+                                      topRight: Radius.circular(20),
+                                      bottomRight: Radius.circular(20),
+                                    ),
+                                  ),
+                                  child: Column(
+                                    children: [
+                                      Expanded(
+                                        flex: 3,
+                                        child: Container(
+                                          width: double.infinity,
+                                          decoration: const BoxDecoration(
+                                            color: Colors.white,
+                                            borderRadius: BorderRadius.only(
+                                              topRight: Radius.circular(20),
+                                            ),
+                                          ),
+                                          child: Padding(
+                                            padding: const EdgeInsets.only(
+                                                left: 13, top: 30),
+                                            child: Column(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: [
+                                                Image.asset(
+                                                    'image/searchbutton.png'),
+                                                const Padding(
+                                                  padding:
+                                                      EdgeInsets.only(top: 8),
+                                                  child: Text(
+                                                    'Cari Berdasarkan\nKata kunci',
+                                                    style: TextStyle(
+                                                        fontSize: 10,
+                                                        color: Color.fromRGBO(
+                                                            207, 207, 207, 1)),
+                                                  ),
+                                                )
+                                              ],
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                      Expanded(
+                                        flex: 2,
+                                        child: Container(
+                                          width: double.infinity,
+                                          decoration: const BoxDecoration(
+                                            color:
+                                                Color.fromRGBO(239, 126, 49, 1),
+                                            borderRadius: BorderRadius.only(
+                                              bottomRight: Radius.circular(20),
+                                            ),
+                                          ),
+                                          child: const Center(
+                                            child: Text(
+                                              'Lihat Semua',
+                                              style: TextStyle(
+                                                  fontSize: 12,
+                                                  color: Colors.white),
+                                            ),
+                                          ),
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ]),
                           ),
                         ),
-                      ],
-                    ),
+                      ),
+                      Expanded(
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 0),
+                              child: Container(
+                                width: double.infinity,
+                                height: 164,
+                                decoration: const BoxDecoration(
+                                  color: Color.fromRGBO(0, 133, 205, 1),
+                                  borderRadius: BorderRadius.all(
+                                    Radius.circular(10),
+                                  ),
+                                ),
+                                padding: EdgeInsets.only(top: 36),
+                                child: Column(
+                                  // mainAxisAlignment:
+                                  //     MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    Container(
+                                      width: 93,
+                                      height: 22,
+                                      decoration: const BoxDecoration(
+                                        color: Color.fromRGBO(76, 170, 220, 1),
+                                        borderRadius: BorderRadius.all(
+                                          Radius.circular(10),
+                                        ),
+                                      ),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Container(
+                                            width: 23,
+                                            decoration: const BoxDecoration(
+                                              color: Color.fromRGBO(
+                                                  130, 195, 231, 1),
+                                              borderRadius: BorderRadius.all(
+                                                Radius.circular(10),
+                                              ),
+                                            ),
+                                            child: const Center(
+                                              child: Text(
+                                                'USD',
+                                                style: TextStyle(
+                                                  fontSize: 6,
+                                                  color: Colors.white,
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                          const Padding(
+                                            padding:
+                                                EdgeInsets.only(right: 10.0),
+                                            child: Text(
+                                              '1',
+                                              style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 10),
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(
+                                          top: 5, bottom: 5),
+                                      child: Image.asset('image/convert.png'),
+                                    ),
+                                    Container(
+                                      width: 93,
+                                      height: 22,
+                                      decoration: const BoxDecoration(
+                                        color: Color.fromRGBO(76, 170, 220, 1),
+                                        borderRadius: BorderRadius.all(
+                                          Radius.circular(10),
+                                        ),
+                                      ),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Container(
+                                            width: 23,
+                                            decoration: const BoxDecoration(
+                                              color: Color.fromRGBO(
+                                                  130, 195, 231, 1),
+                                              borderRadius: BorderRadius.all(
+                                                Radius.circular(10),
+                                              ),
+                                            ),
+                                            child: const Center(
+                                              child: Text(
+                                                'Rp',
+                                                style: TextStyle(
+                                                  fontSize: 6,
+                                                  color: Colors.white,
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                          const Padding(
+                                            padding:
+                                                EdgeInsets.only(right: 10.0),
+                                            child: Text(
+                                              '14.500',
+                                              style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 10),
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(
+                                          top: 15.0, right: 10),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.end,
+                                        children: const [
+                                          Text(
+                                            'berdasarkan kurs tanggal 30\nAgustus 2022, 08:00 WIB',
+                                            style: TextStyle(
+                                                fontSize: 6,
+                                                color: Colors.white),
+                                          ),
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ]),
                   ),
 
                   Padding(
