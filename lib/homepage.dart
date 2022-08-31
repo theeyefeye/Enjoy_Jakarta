@@ -6,6 +6,29 @@ class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        shadowColor: Colors.white,
+        surfaceTintColor: Colors.white,
+        actions: [
+          const Align(
+            child: Text(
+              "Han Vito Prima",
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 14,
+                fontFamily: 'Signika',
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+          ),
+          Container(
+            child: Image.asset('image/Profile-Pic.png'),
+          ),
+        ],
+      ),
       body: Stack(
         children: [
           // buat background
@@ -23,38 +46,6 @@ class Homepage extends StatelessWidget {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  Container(
-                    height: 0,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(right: 17),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        const Text(
-                          "Han Vito Prima",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 14,
-                            fontFamily: 'Signika',
-                            fontWeight: FontWeight.w400,
-                          ),
-                        ),
-                        SizedBox(width: 6),
-                        Container(
-                          height: 36,
-                          width: 36,
-                          decoration: const BoxDecoration(
-                            color: Colors.grey,
-                            borderRadius: BorderRadius.all(
-                              Radius.circular(20),
-                            ),
-                          ),
-                          child: Image.asset('image/Profile-Pic.png'),
-                        ),
-                      ],
-                    ),
-                  ),
                   Container(
                     child: Image.asset('image/Logo Enjoy.png'),
                   ),
@@ -184,7 +175,7 @@ class Homepage extends StatelessWidget {
                                         style: TextStyle(
                                           color: Colors.green,
                                           fontWeight: FontWeight.w700,
-                                          fontSize: 8,
+                                          fontSize: 10,
                                         ),
                                       )
                                     ],
